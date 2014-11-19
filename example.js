@@ -1,6 +1,8 @@
-var x = 0;
+var x = process.argv[2];
+var i = 0;
 
-while (x < 5) {
-  x++;
-  console.log(x);
+while (i < x.length) {
+  var n = x.charAt(i);
+  console.log(n);
+  i++;
 }
