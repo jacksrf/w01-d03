@@ -1,0 +1,46 @@
+<html>
+<body>
+  <canvas id="the_canvas" width="400" height="400"></canvas>
+  <script>
+  var canvas = document.getElementById('the_canvas');
+  var ctx = canvas.getContext('2d');
+
+  ctx.beginPath(90,0);
+  ctx.arc(165,75,50,0,Math.PI*2,true); //head
+  ctx.moveTo(200,75);
+  ctx.arc(165,75,35,0,Math.PI,false); //mouth
+  ctx.moveTo(155,65);
+  ctx.arc(150,65,5,0,Math.PI*2,true); //left eye
+  ctx.moveTo(185,65);
+  ctx.arc(180,65,5,0,Math.PI*2,true); //right eye
+  ctx.stroke();
+
+  ctx.beginPath();
+  ctx.arc(165,150,20,0,Math.PI,true); //body
+  ctx.lineTo(145,300);
+  ctx.lineTo(185,300);
+  ctx.lineTo(185,150);
+  ctx.stroke();
+
+  ctx.beginPath();
+  ctx.arc(135,175,10,0,Math.PI,true); //left arm
+  ctx.lineTo(115,250);
+  ctx.lineTo(135,250);
+  ctx.lineTo(145,175);
+  ctx.stroke();
+
+  ctx.beginPath();
+  ctx.arc(195,175,10,0,Math.PI,true); //right arm
+  ctx.lineTo(195,250);
+  ctx.lineTo(215,250);
+  ctx.lineTo(205,175);
+  ctx.stroke();
+
+
+
+
+
+
+  </script>
+</body>
+</html>
